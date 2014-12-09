@@ -85,6 +85,7 @@ p {
 /* footer */
 
 footer {
+  text-align:center;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
@@ -188,4 +189,28 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+
+.centeredImage
+  {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+  }
+
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }

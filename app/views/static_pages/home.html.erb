@@ -1,8 +1,12 @@
 <div class="center jumbotron">
+	<p class="centeredImage">
+		<%= link_to image_tag("logo.png", alt:"STH'15 logo", size:"150"), root_path %>
+	</p>
 	<h1>Squadra Treasure Hunt '15</h1>
 	<h2>It's back! Bigger and better... stay tuned !!</h2>
-	<%= link_to "Register now!",signup_path,class: "btn btn-lg btn-primary" %>
+	<% if !logged_in? %>
+	<%= link_to "Register now!",signup_path,class: "btn btn-lg btn-primary" %> 
+	<% else %>
+	<%= link_to "Set Sail !",'#',class: "btn btn-lg btn-primary" %> 
+	<% end %>
 </div>
-<p class="centeredImage">
-<%= link_to image_tag("logo.png", alt:"STH'15 logo", size:"150"), root_path %>
-</p>
